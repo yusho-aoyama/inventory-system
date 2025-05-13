@@ -1,0 +1,43 @@
+name: "💡 Feature Request"
+description: Suggest a new feature or enhancement
+title: "[Feature] <brief title>"
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Feature Request Form  
+        Please suggest improvements or new functionality.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of what you want to add.
+      placeholder: e.g. "Allow users to sort items by price."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why This Feature?
+      description: Why is this feature important or useful?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered other ways to solve this problem?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information (e.g. screenshots, references)?
